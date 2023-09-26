@@ -62,18 +62,3 @@ function mostrarSiguienteResultado() {
         siguienteButton.style.display = "none";
     }
 }
-
-function getNumeroOrdinal(numero) {
-    var ultimoDigito = numero % 10;
-    var ultimoDosDigitos = numero % 100;
-
-    if (ultimoDigito === 1 && ultimoDosDigitos !== 11) {
-        return numero + "er";
-    } else if (ultimoDigito === 2 && ultimoDosDigitos !== 12) {
-        return numero + "do";
-    } else if (ultimoDigito === 3 && ultimoDosDigitos !== 13) {
-        return numero + "er";
-    } else {
-        return numero + "to";
-    }
-}
